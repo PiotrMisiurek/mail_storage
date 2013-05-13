@@ -1,5 +1,6 @@
 class StoredEmailsController < ApplicationController
   before_filter :set_headers, only: :create
+  skip_before_filter :verify_authenticity_token
 
   def create
     StoredEmail.create(stored_email_params)
