@@ -2,4 +2,4 @@
 
 Simple web service to store emails from sign up or newsletter forms
 
-Send POST to /stored_emails with email param
+Send POST to /stored_emails with params stored_email[email]
