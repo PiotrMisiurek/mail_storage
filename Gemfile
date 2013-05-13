@@ -7,7 +7,7 @@ gem 'rails', '4.0.0.rc1'
 gem 'pg'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 2.13'
 end
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
