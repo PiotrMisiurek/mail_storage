@@ -6,7 +6,9 @@ gem 'rails', '4.0.0.rc1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
+end
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.0.1'
