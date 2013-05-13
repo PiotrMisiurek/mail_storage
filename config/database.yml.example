@@ -1,0 +1,20 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: USERNAME
+  password: PASSWORD
+
+development:
+  database: mail_storage_dev
+  <<: *defaults
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  database: mail_storage_test
+  <<: *defaults
+
+production:
+  database: mail_storage_production
