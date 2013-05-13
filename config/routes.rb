@@ -2,6 +2,9 @@ MailStorage::Application.routes.draw do
 
   resources :stored_emails, only: :create
 
+  match "*path", to: "cross_domains#options_request", via: :option
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
