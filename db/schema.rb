@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130513174302) do
+ActiveRecord::Schema.define(version: 20130624125241) do
 
   create_table "stored_emails", force: true do |t|
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "source"
   end
 
 end
