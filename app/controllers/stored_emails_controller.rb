@@ -17,6 +17,6 @@ class StoredEmailsController < ApplicationController
   
 
   def stored_email_params
-    params.require(:stored_email).permit(:email)
+    params.require(:stored_email).permit(:email, :source)
   end
 end
